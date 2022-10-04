@@ -25,13 +25,7 @@
         <link href="css/owl.theme.default.min.css" rel="stylesheet">
 
         <link href="css/templatemo-medic-care.css" rel="stylesheet">
-<!--
 
-TemplateMo 566 Medic Care
-
-https://templatemo.com/tm-566-medic-care
-
--->
     </head>
     
     <body id="top">
@@ -399,11 +393,22 @@ https://templatemo.com/tm-566-medic-care
                                 <h2 class="text-center mb-lg-3 mb-2">Enquiries</h2>
                             
                                 <form role="form" action="https://formsubmit.co/a8cd2ed9ead02561d3281a1850ea7c1d"  method="post">
-                                    <!-- Honeypot -->
+                                    <!-- <form role="form" action="https://formsubmit.co/a8cd2ed9ead02561d3281a1850ea7c1d"  method="post" onsubmit="return confirm('Are you sure you want to submit?')"> -->
+                                <!-- <form role="form" action="https://formsubmit.co/a8cd2ed9ead02561d3281a1850ea7c1d"  method="post" onsubmit="myFunction()"> -->
+                                    
+                                    <!-- <script>
+                                        function myFunction() {
+                                        alert("The form was submitted");
+                                        }
+                                        </script> -->
+                                        <!-- Honeypot -->
                                     <input type="text" name="_honey" style="display: none;">
 
                                     <!-- Disable Captcha -->
                                     <input type="hidden" name="_captcha" value="false">
+
+                                    <!-- Success message link This is an issue-->
+                                    <input type="hidden" name="_next" value="success.html"> 
 
                                     <div class="row">
                                         <div class="col-lg-6 col-12">
@@ -417,11 +422,6 @@ https://templatemo.com/tm-566-medic-care
                                         <div class="col-lg-6 col-12">
                                             <input type="telephone" name="phone" id="phone" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" class="form-control" placeholder="Phone number: 072 123 1234">
                                         </div>
-
-                                        <!-- <div class="col-lg-6 col-12">
-                                            <input type="date" name="date" id="date" value="" class="form-control">
-                                            
-                                        </div> -->
 
                                         <div class="col-12">
                                             <textarea class="form-control" rows="5" id="message" name="message" placeholder="Message"></textarea>
