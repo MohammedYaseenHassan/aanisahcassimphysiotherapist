@@ -26,9 +26,6 @@
 
         <link href="css/templatemo-medic-care.css" rel="stylesheet">
 
-        <link href="css/style.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-
     </head>
     
     <body id="top">
@@ -507,15 +504,7 @@
         <script src="js/custom.js"></script>
         <script type="text/javascript">
             var elem = document.getElementById("successResponse");
-            elem.value = "http://127.0.0.1:3000/success.html";
-           </script>
-        <!-- <script>
-            function getOrigin() {
-                // let loc = location.origin;
-                // document.querySelector('.location')
-                //     .innerHTML = loc;
-                "http://127.0.0.1:3000/success.html"
-            }
-        </script> -->
+            elem.value = window.location.origin + "/success.html";
+        </script>
     </body>
 </html>
