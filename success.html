@@ -35,6 +35,45 @@
         display: inline-block;
         margin: 0 auto;
       }
+      .button-7 {
+  background-color: #0095ff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px .8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-7:hover,
+.button-7:focus {
+  background-color: #07c;
+}
+
+.button-7:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.button-7:active {
+  background-color: #0064bd;
+  box-shadow: none;
+}
     </style>
     <body>
       <div class="card">
@@ -42,9 +81,11 @@
         <i class="checkmark">✓</i>
       </div class="col-lg-3 col-md-4 col-6 mx-auto">
         <h1>Success</h1> 
-        <p>We received your purchase request;<br/> we'll be in touch shortly!</p>
+        <p>Thank you for writing to us! We're thrilled to hear from you.</p>
+        <p>If your inquiry is urgent, please use the contact details provided our site to talk to one of our staff members.</p> 
+        <p> We'll be in touch shortly!</p>
         <div class="back-button">
-          <input type="button" value="Go back!" onclick="history.back();">
+          <input class="button-7" type="button" value="Go back!" onclick="history.back();">
           <!-- Work on clearing the form -->
           <!-- <input type="button" value="Go back!" onclick=" clearForm(); history.back();"> -->
         </div>
