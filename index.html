@@ -26,6 +26,9 @@
 
         <link href="css/templatemo-medic-care.css" rel="stylesheet">
 
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+
     </head>
     
     <body id="top">
@@ -392,23 +395,16 @@
                                 
                                 <h2 class="text-center mb-lg-3 mb-2">Enquiries</h2>
                             
-                                <form role="form" action="https://formsubmit.co/a8cd2ed9ead02561d3281a1850ea7c1d"  method="post">
-                                    <!-- <form role="form" action="https://formsubmit.co/a8cd2ed9ead02561d3281a1850ea7c1d"  method="post" onsubmit="return confirm('Are you sure you want to submit?')"> -->
-                                <!-- <form role="form" action="https://formsubmit.co/a8cd2ed9ead02561d3281a1850ea7c1d"  method="post" onsubmit="myFunction()"> -->
+                                    <form id= "enquiryBookingForm" role="form" action="https://formsubmit.co/a8cd2ed9ead02561d3281a1850ea7c1d"  method="post">
                                     
-                                    <!-- <script>
-                                        function myFunction() {
-                                        alert("The form was submitted");
-                                        }
-                                        </script> -->
-                                        <!-- Honeypot -->
+                                    <!-- Honeypot -->
                                     <input type="text" name="_honey" style="display: none;">
 
                                     <!-- Disable Captcha -->
                                     <input type="hidden" name="_captcha" value="false">
 
                                     <!-- Success message link This is an issue-->
-                                    <input type="hidden" name="_next" value="success.html"> 
+                                    <input id="successResponse" type="hidden" name="_next" value=""> 
 
                                     <div class="row">
                                         <div class="col-lg-6 col-12">
@@ -420,7 +416,7 @@
                                         </div>
 
                                         <div class="col-lg-6 col-12">
-                                            <input type="telephone" name="phone" id="phone" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" class="form-control" placeholder="Phone number: 072 123 1234">
+                                            <input type="telephone" name="phone" id="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" class="form-control" placeholder="Phone number: xxxxxxxxxx">
                                         </div>
 
                                         <div class="col-12">
@@ -509,6 +505,17 @@
         <script src="js/owl.carousel.min.js"></script>
         <script src="js/scrollspy.min.js"></script>
         <script src="js/custom.js"></script>
-
+        <script type="text/javascript">
+            var elem = document.getElementById("successResponse");
+            elem.value = "http://127.0.0.1:3000/success.html";
+           </script>
+        <!-- <script>
+            function getOrigin() {
+                // let loc = location.origin;
+                // document.querySelector('.location')
+                //     .innerHTML = loc;
+                "http://127.0.0.1:3000/success.html"
+            }
+        </script> -->
     </body>
 </html>

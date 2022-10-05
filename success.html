@@ -40,9 +40,20 @@
       <div class="card">
       <div style="border-radius:200px; height:200px; width:200px; background: #F8FAF5; margin:0 auto;">
         <i class="checkmark">✓</i>
-      </div>
+      </div class="col-lg-3 col-md-4 col-6 mx-auto">
         <h1>Success</h1> 
         <p>We received your purchase request;<br/> we'll be in touch shortly!</p>
+        <div class="back-button">
+          <input type="button" value="Go back!" onclick="history.back();">
+          <!-- Work on clearing the form -->
+          <!-- <input type="button" value="Go back!" onclick=" clearForm(); history.back();"> -->
+        </div>
       </div>
+    </div>
+    <script>
+            function clearForm() {
+              document.getElementById("enquiryBookingForm").reset();
+            }
+        </script>
     </body>
 </html>
