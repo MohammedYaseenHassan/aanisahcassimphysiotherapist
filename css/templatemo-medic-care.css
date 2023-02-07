@@ -949,8 +949,11 @@ div.center-list {
   text-align: center;
 }
 
-.column-ul{
-  columns: 2;
-  width: 55%;
-  margin: auto;
+.check-lists {
+  margin: 0;
+  padding-left: 1.2rem;
+  display: inline-block;
+  text-align: left;
+  list-style: "🠊";
+  color: #00a8a8;
 }
