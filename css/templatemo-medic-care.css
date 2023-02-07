@@ -948,3 +948,9 @@ strong {
 div.center-list {
   text-align: center;
 }
+
+.column-ul{
+  columns: 2;
+  width: 55%;
+  margin: auto;
+}
